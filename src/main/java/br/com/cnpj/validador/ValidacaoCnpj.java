@@ -48,7 +48,7 @@ public class ValidacaoCnpj {
     }
 
     private static String completeCnpj(String cnpjEntrada, int tamanho){
-        var cnpj = cnpjEntrada.replaceAll("[./-]", "");
+        var cnpj = cnpjEntrada.replaceAll("[./-]", "").toUpperCase();
         while (cnpj.length()<tamanho){
             cnpj = "0".concat(cnpj);
         }

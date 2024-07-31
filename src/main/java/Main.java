@@ -8,6 +8,8 @@ public class Main {
         System.out.println(ValidacaoCnpj.isValidCNPJ(cnpj));
         cnpj = "11.222.333/0001-81";
         System.out.println(ValidacaoCnpj.isValidCNPJ(cnpj));
+        cnpj = "ab.cde.fgi/hijk-56";
+        System.out.println(ValidacaoCnpj.isValidCNPJ(cnpj));
         cnpj = "A1.222.333/0001";
         var digito = ValidacaoCnpj.digitoCNPJ(cnpj);
         System.out.println(digito);
